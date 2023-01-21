@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'HeeboRegular';
+}
+@font-face {
+    font-family: 'SpaceGroteskBold';
+    src: url(fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family: 'HeeboRegular' ;
+    src: url(fonts/Heebo-Regular.ttf);
+}
+.kontener{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.pasek{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+    padding-right: 12%;
+}
+.menu ul li{
+
+    list-style: none;
+    display: inline-block;
+    padding-right: 4%;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #161138;
+    font-size: 20px;
+}
+.baner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1C1C;
+    min-height: 603px;
+}
+.lewo{
+    flex-basis: 50%;
+    position: relative;
+    padding-left: 15%;
+    color: white;
+}
+.lewo h1{
+    font-size: 50px;
+    font-family: 'SpaceGroteskBold';
+}
+.lewo p{
+    font-size: 16px;
+    text-align: justify;
+}
+.obrazek{
+    position: relative;
+    width: 85%;
+    height: 85%;
+    border-radius: 20px;
+}
+.prawo{
+    position: relative;
+    flex-basis: 50%;
+    padding-right: 12%;
+}
+
+.baner2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    min-height: 603px;
+}
+.lewo2{
+    flex-basis: 50%;
+    position: relative;
+    padding-right: 12%;
+    color: #1C1C1C;
+}
+.lewo2 h1{
+    font-size: 50px;
+    font-family: 'SpaceGroteskBold';
+    
+}
+.lewo2 p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.prawo2{
+    position: relative;
+    flex-basis: 50%;
+    padding-left: 15%;
+}
+
+.baner3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 603px;
+}
+.szaryblok{
+    height: 50%;
+    background-color: #9C9C9E;
+    border-radius: 20px;
+    flex-basis: 30%;
+}
+.szaryblok2{
+
+    height: 50%;
+    background-color: #9C9C9E;
+    border-radius: 20px;
+    flex-basis: 30%;
+}
+
+.baner3 h3{
+    font-size: 25px;
+    text-align: center;
+    color: #1C1C1C;
+    font-family: 'SpaceGroteskBold';
+}
+.money{
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    padding-top: 13%;
+    padding-bottom: 3%;
+    display:block;
+    max-width:100%;
+}
+hr{
+    color: #1C1C1C;
+}
+footer{
+    width: 100%;
+    display: flex;
+    background-color: white;
+
+}
+.ikony{
+    width: 5%;
+    height: 5%;
+}
+.lewastronka{
+    flex-basis: 50%;
+    padding-left: 15%;
+    align-items: flex-end;
+}
+
+.prawastronka{
+    flex-basis: 50%;
+    color: #161138;
+}
+
+.lewastronka h4{
+    align-items: flex-end;
+    float: right;
+    width: 94%;
+    padding-top: 1%;
+    color: #161138;
+}
+
+.hamburger{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+p{
+    font-size: 16px;
+}
+.baner p{
+    padding-right: 7%;
+}
+.baner2 p{
+    padding-right: 7%;
+}
+
+@media screen and (min-width: 1000px){
+    .hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .pasek{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu{
+        padding-right: 0%;
+    }
+    .logo{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+    }
+    .lewo{
+        text-align: center;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .baner{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .obrazek{
+        width: 100%;
+        align-items: center;
+        border-radius: 0px;
+    }
+    .prawo{
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .prawo2{
+        text-align: center;
+        padding-right: 0%;
+        padding-left: 0%;
+
+    }
+    .baner2{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .lewo2{
+        text-align: center;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .obrazek{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .baner3{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .baner p{
+    padding-right: 0%;
+    }
+    .baner2 p{
+    padding-right: 0%;
+    }
+    
+}
